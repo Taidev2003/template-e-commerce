@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <!-- start header -->
+    <header>
+        <div class="navbar bg-[#fff]">
+            <div class="navbar-start my-3 ">
+
+                <a class="w-[150px] h-[71px] mx-5 "><img src="./images/organic-store-logo5.svg" alt=""></a>
+                <div class=" hidden lg:flex ">
+                    <ul class="menu menu-horizontal px-1">
+                        <li class="hover:text-[#8bc34a] hover:font-bold"><a>EveryThing</a></li>
+                        <li class="hover:text-[#8bc34a] hover:font-bold">
+                            <a> Groceries</a>
+                        </li>
+                        <li class="hover:text-[#8bc34a] hover:font-bold "><a>Juice</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="navbar-end">
+                <div class=" hidden lg:flex ">
+                    <ul class="menu menu-horizontal px-1">
+                        <li class="hover:text-[#8bc34a] hover:font-bold"><a>About</a></li>
+                        <li class="hover:text-[#8bc34a] hover:font-bold">
+                            <a> Contact</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="btn btn-ghost mx-1 text-[#8bc34a] font-bold " active><a>$0.00<ion-icon name="cart-outline"
+                            class="px-3"></ion-icon></a>
+                </div>
+                <div class="btn btn-ghost text-lg hidden lg:flex"><a><ion-icon
+                            name="person-circle-outline"></ion-icon></a></div>
+                <div class="dropdown dropdown-end ">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden bg-[#8bc34a]">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-end">
+                        <li class="text-center text-lg"><a><ion-icon name="person-circle-outline"></ion-icon></a></li>
+                        <li class="hover:text-[#8bc34a] hover:font-bold"><a>EveryThing</a></li>
+                        <li class="hover:text-[#8bc34a] hover:font-bold">
+                            <a>Groceries</a>
+
+                        </li>
+                        <li class="hover:text-[#8bc34a] hover:font-bold"><a>Juice</a></li>
+                        <li class="hover:text-[#8bc34a] hover:font-bold"><a>About</a></li>
+
+                        <li class="hover:text-[#8bc34a] hover:font-bold"><a>Contact</a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+
+
+    <!-- start banner -->
+    <section>
+        <div class="bg-[#f8f6f3] W-[70%] mx-auto grid grid-cols-1 md:grid-cols-2 ">
+            <div class=" order-2 md:order-1 ml-10 my-[40px] ">
+                <img src="./images/organic-products-hero.png" alt="" class="w-full ">
+            </div>
+            <div class="flex flex-col order-1 md:order-2 mr-10 my-[80px] px-10 ">
+                <div class=" flex justify-center my-3 ">
+                    <img class=" md:mr-auto" src="./images/logo-leaf-new.png" alt="">
+                </div>
+                <div class="my-3 text-center lg:text-left  md:text-left">
+                    <p class="my-3 lg:text-lg font-bold sm:text-base">Best Quality Products!</p>
+                    <p class="my-3 lg:text-6xl font-bold md:text-3xl sm:text-2xl">Join The Organic Movement!</p>
+                    <p class="my-5 text-sm ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                        tellus,
+                        luctus nec
+                        ullamcorper
+                        mattis, pulvinar dapibus leo.</p>
+
+                    <a class="btn  bg-[#8bc34a] text-white hover:bg-[#8bc34a] hover:opacity-75 mt-10" href="#">
+                        <ion-icon name="cart-outline" class="mr-2"></ion-icon>Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end banner -->
+
+    <section>
+        <div class=" bg-[#111111]">
+            <div class=" w-[80%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mx-auto text-white gap-x-4 ">
+                <div class="w-full flex flex-row flex-col items-center justify-center  bg-[#303030] mt-10 my-5">
+
+                    <div class=" flex justify-center text-3xl font-semibold  md:text-xl sm:text-base pt-10 "><ion-icon
+                            name="car-outline" class="text-[#8bc34a] text-4xl  px-1"></ion-icon>
+                        <p class="text-3xl "> Free Shipping</p>
+
+
+                    </div>
+                    <div class=" flex justify-center pb-10 ">
+                        <p class="text-xl md:text-lg sm:text-md">Above $5 Only</p>
+                    </div>
+
+                </div>
+                <div class="w-full flex flex-row flex-col items-center justify-center   bg-[#303030] mt-10 my-5 ">
+
+                    <div class=" flex justify-center text-3xl font-semibold  md:text-xl sm:text-base pt-10 "><ion-icon
+                            name="id-card-outline" class="text-[#8bc34a] text-4xl  px-1"></ion-icon>
+                        <p class="text-3xl "> Certified Organic</p>
+
+
+                    </div>
+                    <div class=" flex justify-center pb-10 ">
+                        <p class="text-xl md:text-lg sm:text-md">100% Guarantee
+
+                        </p>
+                    </div>
+
+                </div>
+                <div class="w-full flex flex-row flex-col items-center justify-center   bg-[#303030] mt-10 my-5 ">
+
+                    <div class=" flex justify-center text-3xl font-semibold  md:text-xl sm:text-base pt-10 "><ion-icon
+                            name="cash-outline" class="text-[#8bc34a] text-4xl  px-1"></ion-icon>
+                        <p class="text-3xl "> Huge Savings</p>
+
+
+                    </div>
+                    <div class=" flex justify-center pb-10 ">
+                        <p class="text-xl md:text-lg sm:text-md">At Lowest Price </p>
+                    </div>
+
+                </div>
+                <div class="w-full flex flex-row flex-col items-center justify-center   bg-[#303030] mt-10 my-5 ">
+
+                    <div class=" flex justify-center text-3xl font-semibold  md:text-xl sm:text-base pt-10 "><ion-icon
+                            name="options-outline" class="text-[#8bc34a] text-4xl  px-1"></ion-icon>
+                        <p class="text-3xl "> Easy Returns</p>
+
+
+                    </div>
+                    <div class=" flex justify-center pb-10 ">
+                        <p class="text-xl md:text-lg sm:text-md">No Questions Asked</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+</body>
+
+</html>
