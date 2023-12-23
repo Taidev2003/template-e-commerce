@@ -11,7 +11,7 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 
-<body>
+<body class="font-[Merriweather]">
     <!-- start header -->
     <header>
         <div class="navbar bg-[#fff]">
@@ -19,7 +19,7 @@
 
                 <a class="w-[150px] h-[71px] mx-5 "><img src="./images/organic-store-logo5.svg" alt=""></a>
                 <div class=" hidden lg:flex ">
-                    <ul class="menu menu-horizontal px-1">
+                    <ul class="menu menu-horizontal px-1 text-lg">
                         <li class="hover:text-[#8bc34a] hover:font-bold"><a>EveryThing</a></li>
                         <li class="hover:text-[#8bc34a] hover:font-bold">
                             <a> Groceries</a>
@@ -31,7 +31,7 @@
 
             <div class="navbar-end">
                 <div class=" hidden lg:flex ">
-                    <ul class="menu menu-horizontal px-1">
+                    <ul class="menu menu-horizontal px-1 text-lg">
                         <li class="hover:text-[#8bc34a] hover:font-bold"><a>About</a></li>
                         <li class="hover:text-[#8bc34a] hover:font-bold">
                             <a> Contact</a>
@@ -40,10 +40,10 @@
 
                 </div>
                 <div class="btn btn-ghost mx-1 text-[#8bc34a] font-bold " active><a>$0.00<ion-icon name="cart-outline"
-                            class="px-3"></ion-icon></a>
+                            class="px-3 text-lg"></ion-icon></a>
                 </div>
-                <div class="btn btn-ghost text-lg hidden lg:flex"><a><ion-icon
-                            name="person-circle-outline"></ion-icon></a></div>
+                <div class="btn btn-ghost text-lg hidden lg:flex"><a><ion-icon name="person-circle-outline"
+                            class="text-2xl"></ion-icon></a></div>
                 <div class="dropdown dropdown-end ">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden bg-[#8bc34a]">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -94,7 +94,7 @@
                         mattis, pulvinar dapibus leo.</p>
 
                     <a class="btn  bg-[#8bc34a] text-white hover:bg-[#8bc34a] hover:opacity-75 mt-10" href="#">
-                        <ion-icon name="cart-outline" class="mr-2"></ion-icon>Shop Now</a>
+                        <ion-icon name="cart-outline" class="mr-2 text-2xl"></ion-icon>Shop Now</a>
                 </div>
             </div>
         </div>
@@ -103,7 +103,7 @@
 
     <section>
         <div class=" bg-[#111111]">
-            <div class=" w-[80%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mx-auto text-white gap-x-4 ">
+            <div class=" w-[80%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mx-auto text-white gap-4 ">
                 <div class="w-full flex flex-row flex-col items-center justify-center  bg-[#303030] mt-10 my-5">
 
                     <div class=" flex justify-center text-3xl font-semibold  md:text-xl sm:text-base pt-10 "><ion-icon
@@ -163,9 +163,297 @@
 
         </div>
     </section>
+    <section class="mb-[100px]">
+        <div class="flex flex-col  items-center mx-auto my-[35px]">
+            <p class="lg:text-4xl sm:text-2xl font-medium my-5 ">Best Selling Product</p>
+            <div> <img src="./images/logo-leaf-new.png" alt=""></div>
+        </div>
+        <div class="grid grid-cols-3 lg:grid-cols-4 gap-4 mx-auto w-[70%]">
+            <div class="flex flex-row flex-col justify-center items-center">
+                <div class="mb-3 mx-auto">
+                    <img src="./images/coffee-asorted-300x300.jpg" alt="">
+                </div>
+                <div class="flex flex-col justify-center items-center text-center py-3 ">
+                    <div class="">
+                        <p class="font-thin">Groceries</p>
+                        <p class="font-medium text-lg">Assorted Coffee</p>
+                        <ul class="flex flex-row items-center justify-center">
+                            <li><ion-icon name="star-outline"></ion-icon></li>
+                            <li><ion-icon name="star-outline"></ion-icon></li>
+                            <li><ion-icon name="star-outline"></ion-icon></li>
+                            <li><ion-icon name="star-outline"></ion-icon></li>
+                            <li><ion-icon name="star-outline"></ion-icon></li>
+                        </ul>
+                        <p class="font-bold ">$35.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-row flex-col justify-center items-center">
+                <div class="mb-3 mx-auto">
+                    <img src="./images/sanitizer-300x300.jpg" alt="">
+                </div>
+                <div class="flex flex-col justify-center items-center text-center py-3 ">
+                    <div class="">
+                        <p class="font-light">Groceries</p>
+                        <p class="font-medium text-lg">Hand Sanitizer</p>
+                        <ul class="flex flex-row items-center justify-center">
+                            <li><ion-icon name="star-outline"></ion-icon></li>
+                            <li><ion-icon name="star-outline"></ion-icon></li>
+                            <li><ion-icon name="star-outline"></ion-icon></li>
+                            <li><ion-icon name="star-outline"></ion-icon></li>
+                            <li><ion-icon name="star-outline"></ion-icon></li>
+                        </ul>
+                        <p class="font-bold ">$15.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-row flex-col justify-center items-center">
+                <div class="mb-3 mx-auto">
+                    <img src="./images/red-chillies-300x300.jpg" alt="">
+                </div>
+                <div class="flex flex-col justify-center items-center text-center py-3 ">
+                    <div class="">
+                        <p class="font-light">Groceries</p>
+                        <p class="font-medium text-lg">Handpicked Red Chillies</p>
+                        <ul class="flex flex-row items-center justify-center">
+                            <li><ion-icon name="star-outline"></ion-icon></li>
+                            <li><ion-icon name="star-outline"></ion-icon></li>
+                            <li><ion-icon name="star-outline"></ion-icon></li>
+                            <li><ion-icon name="star-outline"></ion-icon></li>
+                            <li><ion-icon name="star-outline"></ion-icon></li>
+                        </ul>
+                        <p class="font-bold ">$19.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-row flex-col justify-center items-center">
+                <div class="mb-3 mx-auto">
+                    <img src="./images/edible-oil-300x300.jpg" alt="">
+                </div>
+                <div class="flex flex-col justify-center items-center text-center py-3 ">
+                    <div class="">
+                        <p class="font-light">Groceries</p>
+                        <p class="font-medium text-lg">Natural Extracted Oil</p>
+                        <ul class="flex flex-row items-center justify-center">
+                            <li><ion-icon name="star-outline"></ion-icon></li>
+                            <li><ion-icon name="star-outline"></ion-icon></li>
+                            <li><ion-icon name="star-outline"></ion-icon></li>
+                            <li><ion-icon name="star-outline"></ion-icon></li>
+                            <li><ion-icon name="star-outline"></ion-icon></li>
+                        </ul>
+                        <p class="font-bold ">$25.00</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="bg-[#f8f6f3] ">
+        <div class="flex flex-row justify-center  ">
+            <img src="./images/basil-leaf.png" class="lg:w-[10%] sm:w-[15%] sm:bottom-6 relative bottom-8 " alt="">
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-x-4 w-[80%] mx-auto">
+            <div class="bg-[#fff] flex flex-col items-center justify-start mx-auto my-5 shadow-lg rounded-lg ">
+                <div class="text-left px-5 py-5 ">
+                    <p class="lg:text-3xl text-xl my-2 font-semibold">Fram Fresh Fruits</p>
+                    <p class="my-1 px-3">Ut sollicitudin quam vel purus tempus, vel eleifend felis varius.</p>
+                    <a class="btn  bg-[#8bc34a] text-white hover:bg-[#8bc34a] hover:opacity-75 my-4 " href="#">
+                        Shop Now <ion-icon name="arrow-forward-outline" class="mr-2 text-2xl"></ion-icon></a>
+                </div>
+            </div>
+            <div class="bg-[#fff] flex flex-col items-center justify-start mx-auto my-5 shadow-lg rounded-lg ">
+                <div class="text-left px-5 py-5 ">
+                    <p class="lg:text-3xl text-xl my-2 font-semibold">Fresh Vegetables</p>
+                    <p class="my-1 px-3">Aliquam porta justo nibh, id laoreet sapien sodales vitae justo.</p>
+                    <a class="btn  bg-[#8bc34a] text-white hover:bg-[#8bc34a] hover:opacity-75 my-4 " href="#">
+                        Shop Now <ion-icon name="arrow-forward-outline" class="mr-2 text-2xl"></ion-icon></a>
+                </div>
+            </div>
 
 
+            <div class="bg-[#fff] flex flex-col items-center justify-start mx-auto my-5 shadow-lg rounded-lg ">
+                <div class="text-left px-5 py-5 ">
+                    <p class="lg:text-3xl text-xl my-2 font-semibold">Organic Legume</p>
+                    <p class="my-1 px-3">Phasellus sed urna mattis, viverra libero sed, aliquam est.</p>
+                    <a class="btn  bg-[#8bc34a] text-white hover:bg-[#8bc34a] hover:opacity-75 my-4 " href="#">
+                        Shop Now <ion-icon name="arrow-forward-outline" class="mr-2 text-2xl"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 justify-between  mx-auto  items-center bg-[#111111] ">
+            <div class="flex justify-center  lg:my-[25px] my-[15px] text-white mx-10 text-left">
+                <p class="text-2xl lg:text-4xl font-semibold">Get 25% Off On Your First Purchase!</p>
+            </div>
+            <div class="flex justify-center lg:my-[25px] my-[15px] ">
+                <a class="btn  bg-[#8bc34a] text-white text-xl hover:bg-[#8bc34a] hover:opacity-75 " href="#">
+                    <ion-icon name="cart-outline" class="mr-2 text-2xl"></ion-icon>Shop Now</a>
+            </div>
+        </div>
+        <div class="text-3xl font-bold text-center my-10 pb-[50px]">
+            <p>Try It For Free. No Registration Needed.</p>
+        </div>
+    </section>
+    <section>
+        <div class="flex flex-col  items-center mx-auto my-[35px]">
+            <p class="lg:text-4xl sm:text-2xl font-medium my-5 ">Trending Products</p>
+            <div> <img src="./images/logo-leaf-new.png" alt=""></div>
+        </div>
+        <div class="grid grid-cols-3 lg:grid-cols-4 gap-4 mx-auto w-[70%]">
+            <div class="flex flex-row flex-col justify-center items-center">
+                <div class="mb-3 mx-auto">
+                    <img src="./images/coffee-asorted-300x300.jpg" alt="">
+                </div>
+                <div class="flex flex-col justify-center items-center text-center py-3 ">
+                    <div class="">
+                        <p class="font-thin">Groceries</p>
+                        <p class="font-medium text-lg">Assorted Coffee</p>
+                        <ul class="flex flex-row items-center justify-center">
+                            <li><ion-icon name="star-outline"></ion-icon></li>
+                            <li><ion-icon name="star-outline"></ion-icon></li>
+                            <li><ion-icon name="star-outline"></ion-icon></li>
+                            <li><ion-icon name="star-outline"></ion-icon></li>
+                            <li><ion-icon name="star-outline"></ion-icon></li>
+                        </ul>
+                        <p class="font-bold ">$35.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-row flex-col justify-center items-center">
+                <div class="mb-3 mx-auto">
+                    <img src="./images/sanitizer-300x300.jpg" alt="">
+                </div>
+                <div class="flex flex-col justify-center items-center text-center py-3 ">
+                    <div class="">
+                        <p class="font-light">Groceries</p>
+                        <p class="font-medium text-lg">Hand Sanitizer</p>
+                        <ul class="flex flex-row items-center justify-center">
+                            <li><ion-icon name="star-outline"></ion-icon></li>
+                            <li><ion-icon name="star-outline"></ion-icon></li>
+                            <li><ion-icon name="star-outline"></ion-icon></li>
+                            <li><ion-icon name="star-outline"></ion-icon></li>
+                            <li><ion-icon name="star-outline"></ion-icon></li>
+                        </ul>
+                        <p class="font-bold ">$15.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-row flex-col justify-center items-center">
+                <div class="mb-3 mx-auto">
+                    <img src="./images/red-chillies-300x300.jpg" alt="">
+                </div>
+                <div class="flex flex-col justify-center items-center text-center py-3 ">
+                    <div class="">
+                        <p class="font-light">Groceries</p>
+                        <p class="font-medium text-lg">Handpicked Red Chillies</p>
+                        <ul class="flex flex-row items-center justify-center">
+                            <li><ion-icon name="star-outline"></ion-icon></li>
+                            <li><ion-icon name="star-outline"></ion-icon></li>
+                            <li><ion-icon name="star-outline"></ion-icon></li>
+                            <li><ion-icon name="star-outline"></ion-icon></li>
+                            <li><ion-icon name="star-outline"></ion-icon></li>
+                        </ul>
+                        <p class="font-bold ">$19.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-row flex-col justify-center items-center">
+                <div class="mb-3 mx-auto">
+                    <img src="./images/orage-juice-kariz-300x300.jpg" alt="">
+                </div>
+                <div class="flex flex-col justify-center items-center text-center py-3 ">
+                    <div class="">
+                        <p class="font-light">Juice</p>
+                        <p class="font-medium text-lg">Fresh Orange Juice</p>
+                        <ul class="flex flex-row items-center justify-center">
+                            <li><ion-icon name="star-outline"></ion-icon></li>
+                            <li><ion-icon name="star-outline"></ion-icon></li>
+                            <li><ion-icon name="star-outline"></ion-icon></li>
+                            <li><ion-icon name="star-outline"></ion-icon></li>
+                            <li><ion-icon name="star-outline"></ion-icon></li>
+                        </ul>
+                        <p class="font-bold ">$18.00</p>
+                    </div>
+                </div>
+            </div>
 
+        </div>
+        <div class="join flex items-center justify-center my-5">
+            <button class="join-item btn bg-[#8bc34a] text-white hover:bg-[#8bc34a] hover:opacity-75">1</button>
+            <button class="join-item btn bg-[#8bc34a] text-white hover:bg-[#8bc34a] hover:opacity-75">2</button>
+            <button class="join-item btn bg-[#8bc34a] text-white hover:bg-[#8bc34a] hover:opacity-75">3</button>
+            <button class="join-item btn bg-[#8bc34a] text-white hover:bg-[#8bc34a] hover:opacity-75">4</button>
+        </div>
+    </section>
+    <footer class="bg-[#001524]">
+        <div class=" w-[80%] grid grid-cols-2 mx-auto justify-start text-white ">
+            <div class="flex flex-col my-10">
+                <div><img src="./images/organic-store-white-logo.png" alt=""></div>
+                <div class=" my-10  text-[#5e6b75] text-lg ">
+                    <p class="pr-[100px]">Maecenas mi justo, interdum at consectetur vel, tristique et arcu. Ut quis
+                        eros blandit, ultrices
+                        diam in, elementum ex. Suspendisse quis faucibus urna. Suspendisse pellentesque.</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 items-center  gap-4 my-10">
+                <div class="flex flex-col items-start ">
+                    <div class="text-xl font-semibold my-3 ">
+                        <h1>Quick Links</h1>
+                    </div>
+                    <div class="text-[#5e6b75] text-md p-2">
+                        <ul>
+                            <li>About</li>
+                            <li>Cart</li>
+                            <li>Checkout</li>
+                            <li>Contact</li>
+                            <li>Home</li>
+                            <li>My account</li>
+                            <li>Shop</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex flex-col items-start">
+                    <div class="text-xl font-semibold my-3 ">
+                        <h1>Download Our Mobile App</h1>
+                    </div>
+                    <p class="text-[#5e6b75] text-md p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
+                        praesentium fugit expedita aperiam
+                        sapiente consequatur? Commodi similique maxime sapiente, quis tenetur excepturi voluptatum
+                        veniam possimus blanditiis dicta. Pariatur, corporis iste?</p>
+                </div>
+                <div class="flex flex-col items-start">
+                    <div class="text-xl font-semibold my-3 ">
+                        <h1>Site Links</h1>
+                    </div>
+                    <div class="text-[#5e6b75] text-md p-2">
+                        <ul>
+                            <li>Privacy Policy</li>
+                            <li>Shipping Details</li>
+                            <li>Offers Coupons </li>
+                            <li>Terms & Conditions</li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex flex-col items-start">
+                    <div class="text-xl font-semibold my-3 ">
+                        <h1>
+                            Quick Links
+                        </h1>
+                    </div>
+                    <div class="text-[#8bc34a] text-md p-2">
+                        <ul>
+                            <li>Know More About Us</li>
+                            <li>Visit Store</li>
+                            <li>Let’s Connect
+                            </li>
+                            <li>Locate Stores</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
