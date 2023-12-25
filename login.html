@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body class="font-[Merriweather]">
+    <div class="bg-gradient-to-r from-stone-50 to-lime-50 h-screen py-[170px]">
+        <div
+            class="grid grid-cols-2 mx-auto  justify-center  outline outline-offset-2 rounded-lg w-[80%] shadow-lg shadow-white ">
+
+            <div class=" justify-center text-black relative w-full">
+
+                <img src="./images/download.jpg" alt="" class="w-full h-full opacity-75">
+
+                <div class="absolute lg:left-[95px] lg:top-[50px] top-[100px] left-0  flex flex-col items-center ">
+                    <img src=" ./images/organic-store-logo5.svg" alt="" class="">
+                    <p class="my-5 text-2xl font-bold hidden lg:flex ">Welcome</p>
+                    <p class="text-lg font-semibold hidden lg:flex">Sign in for a better experience</p>
+                </div>
+            </div>
+            <div class="flex flex-col items-start   mx-auto">
+
+                <form action="">
+                    <h1 class="text-xl lg:text-4xl py-5 ">Login</h1>
+                    <div class="flex flex-row justify-center items-center">
+                        <label for=""><ion-icon class="text-2xl" name="person-add-outline"></ion-icon></label>
+                        <input type="text" placeholder="Username"
+                            class="input input-bordered input-white  w-full h-7  max-w-xs mx-2 my-4" />
+                    </div>
+                    <div class="flex flex-row justify-center items-center">
+                        <label for=""><ion-icon class="text-2xl" name="lock-closed-outline"></ion-icon></label>
+                        <input type="password" placeholder="Password"
+                            class="input input-bordered input-white w-full h-7 max-w-xs mx-2 my-4" />
+                    </div>
+                    <div class="form-control ">
+                        <label class="cursor-pointer label">
+                            <span class="label-text">Remember me:</span>
+                            <input type="checkbox" checked="checked" class="checkbox checkbox-success" />
+                        </label>
+                    </div>
+                    <button
+                        class="btn w-full btn-outline my-4 text-black bg-[#8bc34a] hover:bg-[#8bc34a] hover:opacity-75   ">
+                        Sign In</button>
+                    <div class="flex flex-col text-center">
+                        <h1 class="text-xl font-medium">Sign in with</h1>
+                        <div class="my-2">
+                            <ul class="flex flex-row justify-center ">
+                                <li
+                                    class="btn btn-outline btn-xs sm:btn-sm lg:btn-md text-lg lg:text-2xl mx-2 hover:bg-[#8bc34a] hover:text-white">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                </li>
+                                <li
+                                    class="btn btn-outline btn-xs sm:btn-sm lg:btn-md text-lg lg:text-2xl mx-2 hover:bg-[#8bc34a] hover:text-white">
+                                    <ion-icon name="logo-google"></ion-icon>
+                                </li>
+                                <li
+                                    class="btn btn-outline btn-xs sm:btn-sm lg:btn-md  text-lg lg:text-2xl mx-2 hover:bg-[#8bc34a] hover:text-white">
+                                    <ion-icon name="phone-portrait-outline"></ion-icon>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="text-left text-lg">
+                        <p class="font-light"> Create New Account:<a
+                                class="px-2 text-[#8bc34a] font-bold underline decoration-1" href="/register.html"
+                                active>Sign
+                                Up!</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
