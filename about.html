@@ -4,10 +4,341 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 
-<body>
+<body class="font-[Merriweather]">
+    <!-- start header -->
+    <header class="bg-[#f8f6f3]">
+        <div class="navbar ">
+            <div class="navbar-start my-3 ">
+
+                <a class="w-[150px] h-[71px] mx-5 " href="/index.html"><img src="./images/organic-store-logo5.svg"
+                        alt=""></a>
+                <div class=" hidden lg:flex ">
+                    <ul class="menu menu-horizontal px-1 text-lg">
+                        <li class="hover:text-[#8bc34a] hover:font-bold"><a href="/everyThing.html">EveryThing</a></li>
+                        <li class="hover:text-[#8bc34a] hover:font-bold">
+                            <a href="/grocerice.html"> Groceries</a>
+                        </li>
+                        <li class="hover:text-[#8bc34a] hover:font-bold "><a href="/Juice.html">Juice</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="navbar-end">
+                <div class=" hidden lg:flex ">
+                    <ul class="menu menu-horizontal px-1 text-lg">
+                        <li class="hover:text-[#8bc34a] hover:font-bold"><a href="/about.html">About</a></li>
+                        <li class="hover:text-[#8bc34a] hover:font-bold">
+                            <a href="/contact.html"> Contact</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="btn btn-ghost mx-1 text-[#8bc34a] font-bold " onclick="my_model.showModal()" active>
+                    <a>$0.00<ion-icon name="cart-outline" class="px-3 text-lg"></ion-icon></a>
+                </div>
+                <button class="btn btn-ghost text-lg hidden lg:flex"><a href="/login.html"><ion-icon
+                            name="person-circle-outline" class="text-2xl"></ion-icon></a>
+
+                </button>
+                <dialog id="my_model" class="modal ">
+                    <div class="modal-box ">
+                        <form action="" method="dialog">
+                            <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-4">✕</button>
+                        </form>
+                        <h3 class="font-bold text-lg border-b-2 pb-3">Shopping Cart</h3>
+                        <div class="flex flex-row  my-3 mx-auto justify-start ">
+                            <div class="mx-3 rounded-lg ">
+                                <img src="./images/coffee-asorted-300x300.jpg" alt="" class="w-[100px] h-[75px] ">
+                            </div>
+                            <div class="flex flex-col  justify-center px-3">
+                                <p class="text-md font-semibold">Hand Sanitizer</p>
+                                <p>1 × £15.00</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-row  my-3 mx-auto justify-start ">
+                            <div class="mx-3 ">
+                                <img src="./images/coffee-asorted-300x300.jpg" alt="" class="w-[100px] h-[75px] ">
+                            </div>
+                            <div class="flex flex-col  justify-center px-3">
+                                <p class="text-md font-semibold">Hand Sanitizer</p>
+                                <p>1 × £15.00</p>
+                            </div>
+                        </div>
+                        <div class="border-t-2 py-2">
+                            <div class="flex flex-row justify-between text-lg font-medium tracking-wider">
+                                <p>Subtotal:</p>
+                                <p> $30.00</p>
+                            </div>
+                        </div>
+                        <div class="flex border-t-2  py-4 justify-end ">
+                            <div class="btn text-white text-xl font-semibold  bg-[#8bc34a]">
+                                <button>Checkout</button>
+                            </div>
+                        </div>
+                    </div>
+                </dialog>
+
+                <div class="dropdown dropdown-end ">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden bg-[#8bc34a]">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-end">
+                        <li class="text-center text-lg"><a href="/login.html"><ion-icon class="text-2xl"
+                                    name="person-circle-outline"></ion-icon></a></li>
+                        <li class="hover:text-[#8bc34a] hover:font-bold"><a href="/everyThing.html">EveryThing</a></li>
+                        <li class="hover:text-[#8bc34a] hover:font-bold">
+                            <a href="/grocerice.html">Groceries</a>
+
+                        </li>
+                        <li class="hover:text-[#8bc34a] hover:font-bold"><a href="/Juice.html">Juice</a></li>
+                        <li class="hover:text-[#8bc34a] hover:font-bold"><a href="/about.html">About</a></li>
+
+                        <li class="hover:text-[#8bc34a] hover:font-bold"><a href="/contact.html">Contact</a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="text-center text-5xl font-bold pt-8 pb-[110px]">
+            <p>About Us</p>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <section>
+        <div class="flex flex-row justify-center  ">
+            <img src="./images/basil-leaf.png" class="lg:w-[10%] sm:w-[15%] sm:bottom-6 relative " alt="">
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 w-[80%] mx-auto  my-8">
+            <div class="flex flex-col justify-center items-start mx-auto space-y-4 ">
+                <p class="text-4xl font-bold">We Are Your Favourite Store.</p>
+                <p class="lg:pr-8 text-base">Tuas quisquam quo gravida proident harum, aptent ligula anim consequuntur,
+                    ultrices
+                    mauris, nunc
+                    voluptates lobortis, varius, potenti placeat! Fuga omnis. Cubilia congue. Recusandae. Vero penatibus
+                    quasi! Nostra tenetur dignissimos ultrices natus distinctio ultrices consequuntur numqu.</p>
+                <p class="lg:pr-8 text-base"> Officiis fuga harum porro et? Similique rhoncus atque! Netus blanditiis
+                    provident nunc posuere. Rem
+                    sequi, commodo, lorem tellus elit, hic sem tenetur anim amet quas, malesuada proident platea
+                    corrupti expedita.</p>
+            </div>
+            <div class=" w-full flex justify-center items-center my-4">
+                <img src="/images/banner-01.jpg" alt="" class="lg:w-[80%]">
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="bg-[#001524]">
+            <div class="grid grid-cols-1  lg:grid-cols-2 w-[80%] gap-4 mx-auto my-8 text-white ">
+                <div class="flex lg:justify-start justify-center items-center mr-[50px] lg:my-8 my-4">
+                    <p class="lg:text-4xl text-3xl font-bold">Numbers Speak For
+                        Themselves!</p>
+                </div>
+
+                <div class="flex flex-row justify-between items-center mx-4 lg:my-8  mb-4  ">
+                    <ul>
+                        <li class="flex  justify-center  text-4xl font-bold">5.000+</li>
+                        <li class="font-semibold">Curated Products</li>
+                    </ul>
+                    <ul>
+                        <li class="flex justify-center  text-4xl font-bold">800+</li>
+                        <li class="font-semibold">Curated Products</li>
+                    </ul>
+                    <ul>
+                        <li class="flex  justify-center  text-4xl font-bold">40+</li>
+                        <li class="font-semibold">Curated Products</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="grid grid-cols-1 lg:grid-cols-2 w-[90%] mx-auto gap-2 items-center justify-center mt-[120px] ">
+            <div
+                class="w-[70%] h-full flex flex-col justify-center items-center bg-[#f8f6f3] mx-auto rounded-lg mt-[60px] lg:mr-4  ">
+                <div class="w-[80%] carousel rounded-md relative bottom-[100px] ">
+                    <div class="carousel-item w-full">
+                        <img src="/images/image-01-ok9t8tqfmw86q6a5qjwdw95uon8m0ro8dme893gop4.jpg" class="w-full"
+                            alt="Tailwind CSS Carousel component" />
+                    </div>
+                    <div class="carousel-item w-full">
+                        <img src="/images/image-02-ok9thlk7f88j35jeicf161gqa3zxv2i1l1ldi2gemg.jpg" class="w-full"
+                            alt="Tailwind CSS Carousel component" />
+                    </div>
+                    <div class="carousel-item w-full">
+                        <img src="/images/farming03-free-img-o9vzqvrix9ebgtwlxr5iwk27s1xblzkum1b4ivvlzc.jpg"
+                            class="w-full" alt="Tailwind CSS Carousel component" />
+                    </div>
+                    <div class="carousel-item w-full">
+                        <img src="/images/farming04-free-img-o9xdxvnzch1gu353cc71s2fv9hgs2o8e1ubsjmmia0.jpg"
+                            class="w-full" alt="Tailwind CSS Carousel component" />
+                    </div>
+
+                </div>
+                <div class="rating flex flex-row relative bottom-[80px]">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                </div>
+                <div class="w-[80%] mx-auto text-center relative bottom-[60px]">
+                    <p>Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                </div>
+                <div class="flex flex-row justify-center items-center relative bottom-[40px]">
+                    <div class="avatar mx-4">
+                        <div class="w-[50px] rounded-full">
+                            <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                        </div>
+                    </div>
+                    <p>Mila Kunit</p>
+                </div>
+            </div>
+            <div class="flex flex-col flex-row w-full h-full py-[50px] ">
+                <div
+                    class="flex lg:flex-row flex-col justify-center lg:items-center lg:w-[80%] lg:text-left text-center">
+                    <div class="flex justify-center"><img src="/images/organic-badge-freeimg.png" class="lg:w-[60%] "
+                            alt=""></div>
+                    <div>
+                        <p class="text-xl font-bold lg:text-2xl">Certified Products</p>
+                        <p>Click edit button to change this text. Lorem ipsum dolor sit amet</p>
+                    </div>
+                </div>
+                <div class="lg:w-[80%] mx-auto ">
+                    <p class="text-2xl font-bold lg:text-4xl">We Deal With Various Quality Organic Products!</p>
+                    <div class="flex justify-center lg:justify-start my-4 "><img src="/images/logo-leaf-new.png"
+                            class="" alt="">
+                    </div>
+                    <div class="grid grid-cols-2 my-6 w-full mx-auto text-center lg:text-left   ">
+                        <div class="flex flex-col   space-y-4 ">
+                            <p class="flex items-center  text-lg  "><ion-icon class="text-2xl text-[#8bc34a] mr-2"
+                                    name="checkmark-circle-outline"></ion-icon>Fresh
+                                fruits</p>
+                            <p class="flex items-center text-lg  "><ion-icon class="text-2xl text-[#8bc34a] mr-2"
+                                    name="checkmark-circle-outline"></ion-icon>Fresh
+                                fruits</p>
+                            <p class="flex items-center  text-lg  "><ion-icon class="text-2xl text-[#8bc34a] mr-2"
+                                    name="checkmark-circle-outline"></ion-icon>Fresh
+                                fruits</p>
+                            <p class="flex items-center  text-lg  "><ion-icon class="text-2xl text-[#8bc34a] mr-2"
+                                    name="checkmark-circle-outline"></ion-icon>Fresh
+                                fruits</p>
+                            <p class="flex items-center  text-lg  "><ion-icon class="text-2xl text-[#8bc34a] mr-2"
+                                    name="checkmark-circle-outline"></ion-icon>Fresh
+                                fruits</p>
+
+                        </div>
+                        <div class="flex flex-col   space-y-4 ">
+                            <p class="flex items-center  text-lg  "><ion-icon class="text-2xl text-[#8bc34a] mr-2"
+                                    name="checkmark-circle-outline"></ion-icon>Fresh
+                                fruits</p>
+                            <p class="flex items-center text-lg  "><ion-icon class="text-2xl text-[#8bc34a] mr-2"
+                                    name="checkmark-circle-outline"></ion-icon>Fresh
+                                fruits</p>
+                            <p class="flex items-center  text-lg  "><ion-icon class="text-2xl text-[#8bc34a] mr-2"
+                                    name="checkmark-circle-outline"></ion-icon>Fresh
+                                fruits</p>
+                            <p class="flex items-center  text-lg  "><ion-icon class="text-2xl text-[#8bc34a] mr-2"
+                                    name="checkmark-circle-outline"></ion-icon>Fresh
+                                fruits</p>
+
+                        </div>
+
+                    </div>
+                    <a class="btn  bg-[#8bc34a] text-left text-white hover:bg-[#8bc34a] hover:opacity-75 mt-10"
+                        href="#">
+                        <ion-icon name="cart-outline" class="mr-2 text-2xl"></ion-icon>Start Shopping</a>
+                </div>
+
+            </div>
+    </section>
+    <footer class="bg-[#001524] lg:mt-[120px]">
+        <div class=" w-[80%] grid grid-cols-2 mx-auto justify-start text-white ">
+            <div class="flex flex-col my-10">
+                <div><img src="./images/organic-store-white-logo.png" alt=""></div>
+                <div class=" my-10  text-[#5e6b75] text-lg ">
+                    <p class="pr-[100px]">Maecenas mi justo, interdum at consectetur vel, tristique et arcu. Ut quis
+                        eros blandit, ultrices
+                        diam in, elementum ex. Suspendisse quis faucibus urna. Suspendisse pellentesque.</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 items-center  gap-4 my-10">
+                <div class="flex flex-col items-start ">
+                    <div class="text-xl font-semibold my-3 ">
+                        <h1>Quick Links</h1>
+                    </div>
+                    <div class="text-[#5e6b75] text-md p-2">
+                        <ul>
+                            <li>About</li>
+                            <li>Cart</li>
+                            <li>Checkout</li>
+                            <li>Contact</li>
+                            <li>Home</li>
+                            <li>My account</li>
+                            <li>Shop</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex flex-col items-start">
+                    <div class="text-xl font-semibold my-3 ">
+                        <h1>Download Our Mobile App</h1>
+                    </div>
+                    <p class="text-[#5e6b75] text-md p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
+                        praesentium fugit expedita aperiam
+                        sapiente consequatur? Commodi similique maxime sapiente, quis tenetur excepturi voluptatum
+                        veniam possimus blanditiis dicta. Pariatur, corporis iste?</p>
+                </div>
+                <div class="flex flex-col items-start">
+                    <div class="text-xl font-semibold my-3 ">
+                        <h1>Site Links</h1>
+                    </div>
+                    <div class="text-[#5e6b75] text-md p-2">
+                        <ul>
+                            <li>Privacy Policy</li>
+                            <li>Shipping Details</li>
+                            <li>Offers Coupons </li>
+                            <li>Terms & Conditions</li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex flex-col items-start">
+                    <div class="text-xl font-semibold my-3 ">
+                        <h1>
+                            Quick Links
+                        </h1>
+                    </div>
+                    <div class="text-[#8bc34a] text-md p-2">
+                        <ul>
+                            <li>Know More About Us</li>
+                            <li>Visit Store</li>
+                            <li>Let’s Connect
+                            </li>
+                            <li>Locate Stores</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 
 </body>
 

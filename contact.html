@@ -4,10 +4,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 
-<body>
+<body class="font-[Merriweather]">
+    <!-- start header -->
+    <header class="bg-[#f8f6f3] my-4">
+        <div class="navbar ">
+            <div class="navbar-start my-3 ">
+
+                <a class="w-[150px] h-[71px] mx-5 " href="/index.html"><img src="./images/organic-store-logo5.svg"
+                        alt=""></a>
+                <div class=" hidden lg:flex ">
+                    <ul class="menu menu-horizontal px-1 text-lg">
+                        <li class="hover:text-[#8bc34a] hover:font-bold"><a href="/everyThing.html">EveryThing</a></li>
+                        <li class="hover:text-[#8bc34a] hover:font-bold">
+                            <a href="/grocerice.html"> Groceries</a>
+                        </li>
+                        <li class="hover:text-[#8bc34a] hover:font-bold "><a href="/Juice.html">Juice</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="navbar-end">
+                <div class=" hidden lg:flex ">
+                    <ul class="menu menu-horizontal px-1 text-lg">
+                        <li class="hover:text-[#8bc34a] hover:font-bold"><a href="/about.html">About</a></li>
+                        <li class="hover:text-[#8bc34a] hover:font-bold">
+                            <a href="/contact.html"> Contact</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="btn btn-ghost mx-1 text-[#8bc34a] font-bold " onclick="my_model.showModal()" active>
+                    <a>$0.00<ion-icon name="cart-outline" class="px-3 text-lg"></ion-icon></a>
+                </div>
+                <button class="btn btn-ghost text-lg hidden lg:flex"><a href="/login.html"><ion-icon
+                            name="person-circle-outline" class="text-2xl"></ion-icon></a>
+
+                </button>
+                <dialog id="my_model" class="modal ">
+                    <div class="modal-box ">
+                        <form action="" method="dialog">
+                            <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-4">✕</button>
+                        </form>
+                        <h3 class="font-bold text-lg border-b-2 pb-3">Shopping Cart</h3>
+                        <div class="flex flex-row  my-3 mx-auto justify-start ">
+                            <div class="mx-3 rounded-lg ">
+                                <img src="./images/coffee-asorted-300x300.jpg" alt="" class="w-[100px] h-[75px] ">
+                            </div>
+                            <div class="flex flex-col  justify-center px-3">
+                                <p class="text-md font-semibold">Hand Sanitizer</p>
+                                <p>1 × £15.00</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-row  my-3 mx-auto justify-start ">
+                            <div class="mx-3 ">
+                                <img src="./images/coffee-asorted-300x300.jpg" alt="" class="w-[100px] h-[75px] ">
+                            </div>
+                            <div class="flex flex-col  justify-center px-3">
+                                <p class="text-md font-semibold">Hand Sanitizer</p>
+                                <p>1 × £15.00</p>
+                            </div>
+                        </div>
+                        <div class="border-t-2 py-2">
+                            <div class="flex flex-row justify-between text-lg font-medium tracking-wider">
+                                <p>Subtotal:</p>
+                                <p> $30.00</p>
+                            </div>
+                        </div>
+                        <div class="flex border-t-2  py-4 justify-end ">
+                            <div class="btn text-white text-xl font-semibold  bg-[#8bc34a]">
+                                <button>Checkout</button>
+                            </div>
+                        </div>
+                    </div>
+                </dialog>
+
+                <div class="dropdown dropdown-end ">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden bg-[#8bc34a]">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-end">
+                        <li class="text-center text-lg"><a href="/login.html"><ion-icon class="text-2xl"
+                                    name="person-circle-outline"></ion-icon></a></li>
+                        <li class="hover:text-[#8bc34a] hover:font-bold"><a href="/everyThing.html">EveryThing</a></li>
+                        <li class="hover:text-[#8bc34a] hover:font-bold">
+                            <a href="/grocerice.html">Groceries</a>
+
+                        </li>
+                        <li class="hover:text-[#8bc34a] hover:font-bold"><a href="/Juice.html">Juice</a></li>
+                        <li class="hover:text-[#8bc34a] hover:font-bold"><a href="/about.html">About</a></li>
+
+                        <li class="hover:text-[#8bc34a] hover:font-bold"><a href="/contact.html">Contact</a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="text-center text-5xl font-bold pt-8 pb-[110px]">
+            <p>Get In Touch</p>
+        </div>
+    </header>
+    <!-- end header -->
+    <section class="bg-[#fff]">
+
+
+        <div
+            class="w-[80%] mx-auto flex flex-col justify-center border border-2 shadow shadow-lg rounded-md  relative bottom-10 bg-[#fff]    ">
+            <div class="flex flex-row justify-center  ">
+                <img src="./images/basil-leaf.png" class="relative bottom-6 " alt="">
+            </div>
+            <div class="flex lg:flex-row flex-col gap-4  w-[80%] mx-auto justify-between mb-6">
+                <div class="w-full border border-2 text-center my-4  ">
+                    <div class="py-4 space-y-2 ">
+                        <ion-icon class="text-2xl text-[#8bc34a] " name="call-outline"></ion-icon>
+                        <p>+123 456 7890</p>
+                        <p>+123 456 7890</p>
+
+                    </div>
+                </div>
+                <div class="w-full border border-2 text-center my-4 ">
+                    <div class="py-4 space-y-2">
+                        <ion-icon class="text-2xl text-[#8bc34a]" name="mail-open-outline"></ion-icon>
+                        <p>info@example.com</p>
+                        <p>support@example.com</p>
+
+                    </div>
+                </div>
+                <div class="w-full border border-2 text-center my-4 ">
+                    <div class="py-4 space-y-2">
+                        <ion-icon class="text-2xl text-[#8bc34a]" name="location-outline"></ion-icon>
+                        <p>1569 Ave, New York,</p>
+                        <p>NY 10028, USA</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 </body>
 
