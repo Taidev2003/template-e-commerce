@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productdetail</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+    <style>
+        .tabs-bordered {
+            border-color: #8bc34a;
+        }
+    </style>
+</head>
+
+<body class="font-[Merriweather]">
+    <!-- start header -->
+    <header>
+        <div class="navbar bg-[#fff]">
+            <div class="navbar-start my-3 ">
+
+                <a class="w-[150px] h-[71px] mx-5 " href="/index.html"><img src="./images/organic-store-logo5.svg"
+                        alt=""></a>
+                <div class=" hidden lg:flex ">
+                    <ul class="menu menu-horizontal px-1 text-lg">
+                        <li class="hover:text-[#8bc34a] hover:font-bold"><a href="/everyThing.html">EveryThing</a></li>
+                        <li class="hover:text-[#8bc34a] hover:font-bold">
+                            <a href="/grocerice.html"> Groceries</a>
+                        </li>
+                        <li class="hover:text-[#8bc34a] hover:font-bold "><a href="/Juice.html">Juice</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="navbar-end">
+                <div class=" hidden lg:flex ">
+                    <ul class="menu menu-horizontal px-1 text-lg">
+                        <li class="hover:text-[#8bc34a] hover:font-bold"><a href="/about.html">About</a></li>
+                        <li class="hover:text-[#8bc34a] hover:font-bold">
+                            <a href="/contact.html"> Contact</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="btn btn-ghost mx-1 text-[#8bc34a] font-bold " onclick="my_model.showModal()" active>
+                    <a>$0.00<ion-icon name="cart-outline" class="px-3 text-lg"></ion-icon></a>
+                </div>
+                <button class="btn btn-ghost text-lg hidden lg:flex"><a href="/login.html"><ion-icon
+                            name="person-circle-outline" class="text-2xl"></ion-icon></a>
+
+                </button>
+                <dialog id="my_model" class="modal ">
+                    <div class="modal-box ">
+                        <form action="" method="dialog">
+                            <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-4">✕</button>
+                        </form>
+                        <h3 class="font-bold text-lg border-b-2 pb-3">Shopping Cart</h3>
+                        <div class="flex flex-row  my-3 mx-auto justify-start ">
+                            <div class="mx-3 rounded-lg ">
+                                <img src="./images/coffee-asorted-300x300.jpg" alt="" class="w-[100px] h-[75px] ">
+                            </div>
+                            <div class="flex flex-col  justify-center px-3">
+                                <p class="text-md font-semibold">Hand Sanitizer</p>
+                                <p>1 × £15.00</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-row  my-3 mx-auto justify-start ">
+                            <div class="mx-3 ">
+                                <img src="./images/coffee-asorted-300x300.jpg" alt="" class="w-[100px] h-[75px] ">
+                            </div>
+                            <div class="flex flex-col  justify-center px-3">
+                                <p class="text-md font-semibold">Hand Sanitizer</p>
+                                <p>1 × £15.00</p>
+                            </div>
+                        </div>
+                        <div class="border-t-2 py-2">
+                            <div class="flex flex-row justify-between text-lg font-medium tracking-wider">
+                                <p>Subtotal:</p>
+                                <p> $30.00</p>
+                            </div>
+                        </div>
+                        <div class="flex border-t-2  py-4 justify-end ">
+                            <div class="btn text-white text-xl font-semibold  bg-[#8bc34a]">
+                                <button>Checkout</button>
+                            </div>
+                        </div>
+                    </div>
+                </dialog>
+
+                <div class="dropdown dropdown-end ">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden bg-[#8bc34a]">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-end">
+                        <li class="text-center text-lg"><a href="/login.html"><ion-icon class="text-2xl"
+                                    name="person-circle-outline"></ion-icon></a></li>
+                        <li class="hover:text-[#8bc34a] hover:font-bold"><a href="/everyThing.html">EveryThing</a></li>
+                        <li class="hover:text-[#8bc34a] hover:font-bold">
+                            <a href="/grocerice.html">Groceries</a>
+
+                        </li>
+                        <li class="hover:text-[#8bc34a] hover:font-bold"><a href="/Juice.html">Juice</a></li>
+                        <li class="hover:text-[#8bc34a] hover:font-bold"><a href="/about.html">About</a></li>
+
+                        <li class="hover:text-[#8bc34a] hover:font-bold"><a href="/contact.html">Contact</a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+    <section class="bg-[#f8f6f3]">
+        <div class="grid grid-cols-1 lg:grid-cols-2 w-[80%] mx-auto  justify-center ">
+            <div class="lg:mx-6 lg:my-10 my-4">
+                <img src="./images/coffee-asorted.jpg" class="w-full lg:px-4" alt="">
+            </div>
+            <div class="flex flex-col justify-start my-10 text-lg">
+                <p class="text-4xl font-bold">Assorted Coffee</p>
+                <div class="flex flex-row space-x-2 mt-4 mb-2 items-center">
+                    <p class="text-2xl font-bold">$35.00</p>
+                    <p>+ Free Shipping</p>
+                </div>
+                <p>Neque porro quisquam est, qui dolore ipsum quia dolor sit amet, consectetur adipisci velit, sed quia
+                    non incidunt lores ta porro ame. numquam eius modi tempora incidunt lores ta porro ame.</p>
+                <div class="flex flex-row my-4  ">
+                    <input type="number" class="w-[10%] mr-2 text-center rounded-lg" value="1">
+                    <button class="btn bg-[#8bc34a] w-[50%] hover:bg-[#8bc34a] hover:opacity-75">ADD TO CART</button>
+                </div>
+                <div class="my-2 border-t-2">
+                    <div class="flex flex-row space-x-2">
+                        <p>Categories: </p>
+                        <p><a href="#" class="text-[#8bc34a] text-base">Groceries,</a></p>
+                        <p><a href="#" class="text-[#8bc34a] text-base">Juice</a></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" w-[80%] mx-auto px-10 my-4 justify-center border-t-2">
+            <div role="tablist" class="tabs tabs-bordered   ">
+                <input type="radio" name="my_tabs_1" role="tab" class="tab w-[15%] " aria-label="Descriptions"
+                    checked />
+                <div role="tabpanel" class="tab-content py-4 ">Neque porro quisquam est, qui dolore ipsum quia
+                    dolor sit
+                    amet, consectetur adipisci velit, sed quia non incidunt lores ta porro ame. numquam eius modi
+                    tempora incidunt lores ta porro ame.</div>
+
+                <input type="radio" name="my_tabs_1" role="tab" class="tab w-[15%]" aria-label="Review" />
+                <div role="tabpanel" class="tab-content p-10 border-base-300 my-4">
+                    <div class="flex flex-col justify-start font-base text-md lg:text-lg space-y-4">
+                        <p class="text-2xl">Be the first to review “Assorted Coffee”</p>
+                        <p>Your email address will not be published. Required fields are marked *</p>
+                        <div class="flex flex-row">
+                            <p>Your rating * </p>
+                            <div class="rating mx-2">
+                                <input type="radio" name="rating-1" class="mask mask-star" />
+                                <input type="radio" name="rating-1" class="mask mask-star" />
+                                <input type="radio" name="rating-1" class="mask mask-star" />
+                                <input type="radio" name="rating-1" class="mask mask-star" />
+                                <input type="radio" name="rating-1" class="mask mask-star" />
+                            </div>
+                        </div>
+                        <div>
+                            <p>Your Review*</p>
+                            <textarea class="textarea textarea-bordered w-full" placeholder=""></textarea>
+                        </div>
+                        <div class="flex flex-row w-full space-x-2 ">
+                            <div class="w-[50%] mx-auto">
+                                <p>Name *</p>
+                                <input type="text" placeholder="Type here" class="input input-bordered w-full" />
+                            </div>
+                            <div class="w-[50%] mx-auto">
+                                <p>Email *</p>
+                                <input type="text" placeholder="Type here" class="input input-bordered w-full " />
+                            </div>
+                        </div>
+                        <div class="flex flex-row space-x-2">
+                            <input type="checkbox" checked="checked" class="checkbox" />
+                            <p> Save my name, email, and website in this browser for the next time I comment.</p>
+                        </div>
+                        <button
+                            class="btn w-[50%] text-white text-lg bg-[#8bc34a] hover:bg-[#8bc34a] hover:opacity-75">Submit</button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
